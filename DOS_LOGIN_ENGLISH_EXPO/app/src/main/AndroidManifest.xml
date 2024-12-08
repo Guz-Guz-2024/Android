@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.dos_login">
+
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Dos_Login">
+        <activity
+            android:name=".AddUserActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UserListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EditProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PedidoActivity"
+            android:exported="false" /> <!-- Actividad principal (pantalla de inicio de sesión) -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> <!-- Actividad para administradores -->
+        <activity
+            android:name=".AdminActivity"
+            android:exported="true" /> <!-- Actividad para registrar un producto -->
+        <activity
+            android:name=".RegistrarProductoActivity"
+            android:exported="false" /> <!-- Otras actividades -->
+        <activity
+            android:name=".ClientActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false" /> <!-- Nueva actividad para registrar clientes -->
+        <activity
+            android:name=".RegistrarClienteActivity"
+            android:exported="false" />
+    </application>
+
+</manifest>

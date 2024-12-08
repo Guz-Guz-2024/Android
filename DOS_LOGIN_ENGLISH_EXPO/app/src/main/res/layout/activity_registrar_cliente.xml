@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Botón de regreso en la parte superior -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="start"
+            android:layout_marginBottom="16dp">
+
+            <Button
+                android:id="@+id/btn_regresar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:text="←"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:padding="8dp"
+                android:layout_gravity="center_vertical"
+                android:contentDescription="Regresar a la pantalla anterior" />
+        </LinearLayout>
+
+        <!-- Título -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Registrar Cliente"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Campo de texto para el nombre del cliente -->
+        <EditText
+            android:id="@+id/edtNombreCliente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombre del Cliente"
+            android:inputType="textPersonName"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Campo de texto para el DNI del cliente -->
+        <EditText
+            android:id="@+id/edtDniCliente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="DNI"
+            android:inputType="number"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Campo de texto para el correo del cliente -->
+        <EditText
+            android:id="@+id/edtCorreoCliente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Correo"
+            android:inputType="textEmailAddress"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Campo de texto para el teléfono del cliente -->
+        <EditText
+            android:id="@+id/edtTelefonoCliente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Teléfono"
+            android:inputType="phone"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Botones -->
+        <Button
+            android:id="@+id/btn_guardar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Guardar"
+            android:layout_marginBottom="8dp"
+            android:importantForAccessibility="yes"
+            android:contentDescription="Guardar información del cliente" />
+
+        <Button
+            android:id="@+id/btn_actualizar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Actualizar"
+            android:layout_marginBottom="8dp"
+            android:importantForAccessibility="yes"
+            android:contentDescription="Actualizar los datos del cliente" />
+
+        <Button
+            android:id="@+id/btn_eliminar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Eliminar"
+            android:layout_marginBottom="8dp"
+            android:importantForAccessibility="yes"
+            android:contentDescription="Eliminar al cliente" />
+
+        <Button
+            android:id="@+id/btn_buscar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Buscar"
+            android:layout_marginBottom="8dp"
+            android:importantForAccessibility="yes"
+            android:contentDescription="Buscar un cliente por nombre" />
+
+        <Button
+            android:id="@+id/btn_limpiar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Limpiar"
+            android:layout_marginBottom="8dp"
+            android:importantForAccessibility="yes"
+            android:contentDescription="Limpiar los campos de entrada" />
+
+        <Button
+            android:id="@+id/btn_cerrar_sesion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cerrar Sesión"
+            android:layout_marginTop="16dp"
+            android:importantForAccessibility="yes"
+            android:contentDescription="Cerrar la sesión actual" />
+    </LinearLayout>
+</ScrollView>

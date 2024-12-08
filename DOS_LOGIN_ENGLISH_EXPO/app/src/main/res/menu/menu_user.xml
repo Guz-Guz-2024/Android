@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_edit_profile"
+        android:iconTint="@color/black"
+        android:orderInCategory="1"
+
+        android:title="Editar Perfil"
+        android:textColor="#5F5D5D"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_list_users"
+        android:title="Listar Usuarios"
+        app:showAsAction="never" />
+
+
+</menu>
